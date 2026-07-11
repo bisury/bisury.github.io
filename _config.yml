@@ -1,0 +1,11 @@
+title: bisury notes
+description: 직접 써 보고 남기는 공개 메모와 작은 앱
+lang: ko-KR
+timezone: Asia/Seoul
+url: https://bisury.github.io
+baseurl: ""
+permalink: /blog/:title/
+markdown: kramdown
+
+exclude:
+  - README.md

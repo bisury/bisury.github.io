@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'ko-KR' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav aria-label="주요 메뉴">
+      <a href="{{ '/' | relative_url }}">글</a>
+      <a href="{{ '/unluckylotto/' | relative_url }}">unluckylotto</a>
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>© {{ 'now' | date: '%Y' }} bisury</footer>
+</body>
+</html>
